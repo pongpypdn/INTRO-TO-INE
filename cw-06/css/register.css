@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background: #ff4d4d;
+  padding: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .search-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navbar input[type="search"] {
+  width: 100%;
+  max-width: 230px;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  background: #ff4d8d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 400px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #ffdb4d;
+  width: 300px;
+  padding: 30px 10px;
+}
+
+.sidebar a {
+  display: block;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: left;
+  border-radius: 5px;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin: 10px 0px 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 40%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn-register {
+  background: #00c853;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 42%;
+  border-radius: 3px;
+}
+
+.btn-cancel {
+  background: #f44336;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 42%;
+  border-radius: 3px;
+}
+
+/* Footer */
+.footer {
+  background: #ff4da6;
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+}
+
+/* ========================
+   📱 Responsive Design
+   ======================== */
+@media screen and (max-width: 992px) {
+  /* Tablet */
+  .row {
+    flex-direction: column; /* ซ้อนกันแทน */
+  }
+  .leftcolumn,
+  .rightcolumn {
+    flex: 100%;
+  }
+  .topnav a {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Mobile */
+  .topnav a,
+  .topnav .search-container {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .leftcolumn,
+  .rightcolumn {
+    flex: 100%;
+    padding: 10px;
+  }
+  .header {
+    padding: 20px;
+  }
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+}

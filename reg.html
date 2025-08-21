@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>ข้อมูลส่วนตัวผู้สมัคร</h2>
+    <form>
+        คำนำหน้า : <input type="radio" name="name" required> นาย 
+                  <input type="radio" name="name" required> นางสาว 
+                  <input type="radio" name="name" required> นาง <br><br>
+        ชื่อ : <input type="text" required> 
+        นามสกุล : <input type="text" required> <br><br>
+        เลขบัตรประจำตัวประชาชน(13 หลัก) : <input type="text" maxlength="13" required> <br><br>
+        วัน/เดือน/ปีเกิด : <input type="date" required> <br><br>
+        อายุ(ปี) : <input type="number" required> <br><br>
+        เพศ : <input type="radio" name="age" required> ชาย
+              <input type="radio" name="age" required> หญิง
+              <input type="radio" name="age" required> ไม่ระบุ <br><br>
+        สัญชาติ : <input type="text" required>
+        เชื้อชาติ : <input type="text" required>
+        ศาสนา : <input type="text" required><br><br>
+        เบอร์โทรศัพท์ : <input type="tel" maxlength="10" required><br><br>
+        อีเมล : <input type="email" required><br><br>
+        ที่อยู่ : <input type="textarea" required><br><br>
+    </form>
+    <h2>ข้อมูลการสมัครเรียน</h2>
+    <form>
+        วุฒิการศึกษาที่จบมา : <input type="radio" name="education" required> ม.6 
+                          <input type="radio" name="education" required> ปวช.
+                          <input type="radio" name="education" required> ปวส. <br><br>
+        ชื่อสถานศึกษาที่จบ : <input type="text" required> <br><br>
+        ปีการศึกษาที่จบ : <input type="number" required> <br><br>
+        GPA : <input type="number" step="0.01" required> <br><br>
+        สาขาที่สมัคร : <br>  
+                    <input type="radio" required> IT เทคโนโลยีสารสนเทศ<br>
+                    <input type="radio" required> ITI เทคโนโลยีสารสนเทศ(หลักสูตรเทียบโอน)<br>
+                    <input type="radio" required> INE วิศวกรรมสารสนเทศและเครือข่าย<br>
+                    <input type="radio" required> INET วิศวกรรมสารสนเทศและเครือข่าย(หลักสูตรเทียบโอน)<br><br>
+        เหตุผลที่เลือกสาขา : <input type="textarea" required> <br><br>
+    </form>
+    <h2>ประวัติการศึกษา</h2>
+    <table>
+        <tr>
+            <td>ระดับการศึกษา</td>
+            <td>สถานศีกษา</td>
+            <td>จังหวัด</td>
+            <td>ปีที่เข้าศึกษา</td>
+            <td>ปีที่จบการศีกษา</td>
+            <td>วุฒิที่ได้รับ</td>
+            <td>GPA</td>
+        </tr>
+        <tr>
+            <td>ประถมศึกษา</td>
+            <td><input type="text" required></td>
+            <td><input type="text" required></td>
+            <td><input type="number" required></td>
+            <td><input type="number" required></td>
+            <td><input type="text" required></td>
+            <td><input type="number" step="0.01" required></td>
+        </tr>
+        <tr>
+            <td>มัธยมต้น</td>
+            <td><input type="text" required></td>
+            <td><input type="text" required></td>
+            <td><input type="number" required></td>
+            <td><input type="number" required></td>
+            <td><input type="text" required></td>
+            <td><input type="number" step="0.01" required></td>
+        </tr>
+        <tr>
+            <td>มัธยมปลาย/ปวช./ปวส.</td>
+            <td><input type="text" required></td>
+            <td><input type="text" required></td>
+            <td><input type="number" required></td>
+            <td><input type="number" required></td>
+            <td><input type="text" required></td>
+            <td><input type="number" step="0.01" required></td>
+        </tr>
+    </table>
+    <h2>เอกสาร</h2>
+    <form>
+        สำเนาบัตรประชาชน <input type="file" required> <br><br>
+        ใบแสดงวุฒิการศึกษา <input type="file" required> <br><br>
+        <input type="checkbox" required> ยอมรับเงื่อนไข <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
